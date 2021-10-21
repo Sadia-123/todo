@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".CreateCard">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="316dp"
+        android:layout_height="197dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/drawable"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Details"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif"/>
+    <EditText
+        android:id="@+id/create_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:background="@drawable/custom_edittetext"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/create_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Priority"
+        android:padding="15dp"
+        android:background="@drawable/custom_edittetext"
+        android:backgroundTint="@color/white"
+       android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        android:backgroundTint="@color/purple_200"/>
+
+</LinearLayout>
